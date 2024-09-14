@@ -1,0 +1,287 @@
+
+    /* CSS pour la section des prières */
+        .prieres-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Espacement entre les boîtes */
+            justify-content: center; /* Centre les boîtes horizontalement */
+            padding: 20px; /* Espacement interne */
+        }
+        .main-container {
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+        .introduction, .fonctionnalites, .appels-a-l-action {
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #8B0000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* CSS pour les sections avec accordéon */
+        .section {
+            border: 1px solid #800;
+            border-radius: 5px;
+            margin-bottom: 20px; }
+        .section-title {
+            background-color: #f4f4f4;
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 10px solid #ddd;
+ }
+
+        .section-content {
+            display: none;
+            padding: 10px;
+        }
+        nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+/* CSS pour la section À propos */
+#a-propos {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#a-propos h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+#a-propos p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+#nos-fonctionnalites {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+#nos-fonctionnalites h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+.fonctionnalite {
+    margin-bottom: 30px;
+}
+.fonctionnalite h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+#demande-priere-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#demande-priere-form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#demande-priere-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+#demande-priere-form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#demande-priere-form button:hover {
+    background-color: #2980b9;
+}
+.boite-prieres {
+    max-height: 100px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 10px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+.priere {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.priere:last-child {
+    border-bottom: none;
+    margin-bottom: 10;
+    padding-bottom: 15;
+}
+.priere .auteur {
+    font-weight: bold;
+    color: #34495e;
+}
+#notifications-priere-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+#notifications-priere-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#notifications-priere-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#notifications-priere-form button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#notifications-priere-form button:hover {
+    background-color: #d35400;
+}
+  .priere-box {
+            margin: 10px 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            text-align: center;
+}
+        .priere-box a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .priere-box a:hover {
+            color: #007BFF;
+        }
+
+        .sous-section {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            display: none; /* Cacher les sous-sections par défaut */
+        }
+        :target {
+            display: block;
+            background-color: #cfe2ff;
+            border: 1px solid #007BFF;
+        }
+        /* Structure de base pour le corps et le conteneur principal */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: #8B0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+section#accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    background-image: url('votre-image-de-fond.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+}
+section#accueil div {
+    z-index: ;
+}
+section.prieres {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+/* Conteneur principal pour les boîtes de prière */
+.prieres-container {
+    display: flex; 50
+    flex-wrap: wrap; /* Permet aux boîtes de passer à la ligne suivante si l'espace est insuffisant */
+    gap: 5px; /* Espace entre les boîtes */
+    justify-content: center; /* Centre les boîtes horizontalement */
+.priere-box {
+    flex: 1 1 calc(100% - 70px);
+    box-sizing: border-box;
+    background-color: #FF6347; /* Exemple de couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 20px; /* Espacement interne */
+    border-radius: 50px; /* Coins arrondis */
+    text-align: center; 50/* Centre le texte */
+    font-size: 2.20em; /* Taille du texte */
+    margin-bottom: 5px; /* Espace en bas de chaque boîte */
+}
+/* Style pour les petits écrans */
+@media (max-width: 1024px) {
+    .priere-box {
+        flex: 1 1 calc(50% - 20px); /* Deux boîtes par ligne sur les écrans moyens */
+    }
+}
+
+@media (max-width: 768px) {
+    .priere-box {
+        flex: 1 1 100%; /* Une boîte par ligne sur les petits écrans */
+}
+footer {
+    background-color: #8B0000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+    </style>
